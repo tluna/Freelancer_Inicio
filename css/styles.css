@@ -17,6 +17,15 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   /* Hack para Box Model **/
+  scroll-snap-type: y mandatory;
+}
+
+/* Scroll Snap **/
+.navegacion-principal,
+.servicios,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 *,
@@ -180,7 +189,7 @@ h3 {
   color: var(--blanco);
 }
 
-.ubicacion {
+.contenido-hero .ubicacion {
   display: flex;
   align-items: flex-end;
 }
